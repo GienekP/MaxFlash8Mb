@@ -10,16 +10,16 @@ Device   p22v10;
 
 /* *************** INPUT PINS ******************** */
 PIN 1  = CLK;
-PIN 2	= A0;
+PIN 2	 = A0;
 PIN 3  = RW;
-PIN 4	= A1;
+PIN 4	 = A1;
 PIN 5  = A2;
 PIN 6  = A3;
 PIN 7  = A4;
 PIN 8  = A5;
 PIN 9  = A6;
-PIN 10	= A7;
-PIN 11	= nS5;
+PIN 10 = A7;
+PIN 11 = nS5;
 PIN 13 = nCCTL;
 
 /* *************** OUTPUT PINS ******************** */
