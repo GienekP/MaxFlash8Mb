@@ -37,12 +37,13 @@ PIN 23 = A15;
 /* ****************** LOGIC *********************** */
 nRW    = ( !RW );
 CCTL   = ( !nCCTL );
+S5     = ( !nS5 );
 
-nCE1   = !( ( !nS5 & RW ) # ( !nS5 & !RW & CLK ) );
+nCE1   = ( !( ( S5 & RW ) # ( S5 & !RW & CLK ) ) );
 nCE2   = 'b'1;
 trig   = ( CCTL );
 ntrig  = ( !trig );
-OE     = nRW;
+OE     = ( S5 & nRW );
 
 RD5.D  = !( ( trig & A7 ) # ( ntrig & ( !RD5 ) ) );
 RD5.ar = 'b'0;
